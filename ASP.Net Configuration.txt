@@ -1,0 +1,22 @@
+1) In cmd, type this:
+cd C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+2) then type this:
+aspnet_regsql.exe
+
+3) Depending on your connectionString in file Web.config, input this
+   on dialog textbox
+
+   Server: localhost\SqlExpress
+
+4) then type this in cmd.
+cd C:\Program Files\IIS Express
+iisexpress.exe /path:c:\windows\Microsoft.NET\Framework\v4.0.30319\ASP.NETWebAdminFiles /vpath:"/asp.netwebadminfiles" /port:8090 /clr:4.0 /ntlm
+
+
+
+5) then paste this in the browser.
+http://localhost:8090/asp.netwebadminfiles/default.aspx?applicationPhysicalPath=[Exact_Project_Path]\&applicationUrl=/
+
+Like this:
+http://localhost:8090/asp.netwebadminfiles/default.aspx?applicationPhysicalPath=C:\Toshiba\ToshibaGDrive\Shorts\COMP229-005\DefaultVS15Workspace\BookExTriedOnMyOwn\Ch13b\Ver01\&applicationUrl=/
