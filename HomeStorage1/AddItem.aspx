@@ -10,7 +10,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <h1>Add Recipe</h1>
+    <h1>Add Item</h1>
 
     <p>
         <span class="widelabel">Item Name:</span>
