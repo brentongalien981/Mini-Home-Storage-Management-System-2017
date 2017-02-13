@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Add Item" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddItem.aspx.cs" Inherits="AddItem" %>
+﻿<%@ Page Title="Add Item" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddItem_Copy.aspx.cs" Inherits="AddItem" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <style>
@@ -25,6 +25,15 @@
         <span class="widelabel">Tags:</span>
         <asp:textbox id="tagsTextBox" runat="server" />
         <br />
+
+        <%-- Don't need this. --%>
+        <%-- 
+        <span class="widelabel">Portions:</span>
+        <asp:textbox id="portionsTextBox" runat="server" />
+        <asp:requiredfieldvalidator id="portionsRequiredFieldValidator" forecolor="Red" runat="server" errormessage="* Portions is required." controltovalidate="portionsTextBox" display="Dynamic" setfocusonerror="True"></asp:requiredfieldvalidator>
+        <asp:comparevalidator id="portionsCompareValidator" runat="server" forecolor="Red" errormessage="* Portions should be greater than 0." type="Integer" controltovalidate="portionsTextBox" valuetocompare="0" operator="GreaterThan" display="Dynamic" setfocusonerror="True"></asp:comparevalidator>
+        <br />
+        --%>
 
 
         <span class="widelabel">Description:</span>

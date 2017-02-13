@@ -49,18 +49,8 @@ public partial class AddItem : System.Web.UI.Page
                 comm.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar, 500);
                 comm.Parameters["@Description"].Value = descriptionTextBox.Text;
 
-
                 comm.Parameters.Add("@ContainedBy", System.Data.SqlDbType.Int);
-                string containedBy = containedByTextbox.Text;
-                if (containedBy == "")
-                {
-                    comm.Parameters["@ContainedBy"].Value = DBNull.Value;
-                }
-                else
-                {
-                    comm.Parameters["@ContainedBy"].Value = containedBy;
-                }
-                
+                comm.Parameters["@ContainedBy"].Value = containedByTextbox.Text;
 
                 comm.Parameters.Add("@Private", System.Data.SqlDbType.Int);
                 comm.Parameters["@Private"].Value = privacyList.SelectedItem.Value;
