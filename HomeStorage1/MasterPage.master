@@ -11,7 +11,7 @@
     <form id="form_master" runat="server">
         <!-- Header -->
         <div class="Header">
-            <h2 id="headerLabel">Recipe Website :(</h2>
+            <h2 id="headerLabel">Elena's Home-Storage App :(</h2>
             <%--<asp:Image ID="Image1" runat="server" ImageUrl="~/Photos/banner.jpg" Width="960" Height="50" />--%>
         </div>
 

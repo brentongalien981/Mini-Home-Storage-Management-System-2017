@@ -9,13 +9,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <h2>Default.aspx</h2>
     <p>
-        Hello there Recipe-ers!<br />
+        Kumusta na kayo ngay?!<br />
         Wassup?
     </p><br /><br />
 
     <h1>What's up?</h1>
-    <p>We'll add some recipes later.</p><br />
-    <h2>Recipe re ci pe re see p</h2>
-    <p>We'll add awesome recipes later.</p>
+    <p>Magdagdag kami mamaya ng item.</p><br />
+    <h2>di mo na uli makalimutan gamit mo ;)</h2>
+    <p>Pakabuot ka ha...</p>
 </asp:Content>
 
