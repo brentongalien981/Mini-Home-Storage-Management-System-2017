@@ -47,9 +47,9 @@
                                 <asp:Menu runat="server">
                                     <Items>
                                         <asp:MenuItem Text="Home" NavigateUrl="Default.aspx"></asp:MenuItem>
-                                        <asp:MenuItem Text="View My Items" NavigateUrl="ViewMyItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Search Item" NavigateUrl="SearchItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Add Item" NavigateUrl="AddItem.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>
                                     </Items>
                                 </asp:Menu>
                             </LoggedInTemplate>
@@ -66,7 +66,7 @@
                                         <asp:Menu runat="server">
                                             <Items>
                                                 <asp:MenuItem Text="Home" NavigateUrl="Default.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="View My Items" NavigateUrl="ViewMyItem.aspx"></asp:MenuItem>
+                                                <%--<asp:MenuItem Text="View My Items" NavigateUrl="ViewMyItem.aspx"></asp:MenuItem>--%>
                                                 <asp:MenuItem Text="Search Item" NavigateUrl="SearchItem.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Add Item" NavigateUrl="AddItem.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>

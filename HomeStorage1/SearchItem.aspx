@@ -40,7 +40,7 @@
         <span class="widelabel">Item Privacy:</span>
         <asp:dropdownlist id="privacyList" runat="server">
             <asp:ListItem Text="Only My Items" Value="1" />
-            <asp:ListItem Text="Public Items" Value="0" />
+            <asp:ListItem Text="Public and My Own Items" Value="0" />
         </asp:dropdownlist>
         <br />
     </p>

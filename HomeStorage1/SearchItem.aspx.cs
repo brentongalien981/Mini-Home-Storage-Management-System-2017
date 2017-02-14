@@ -70,10 +70,8 @@ public partial class SearchItem : System.Web.UI.Page
 
         if (privacyList.SelectedItem.Value == "1")
         {
-            // Search only the user's own recipes.
-            //comm = new SqlCommand("SelectOnlyMyOwnRecipe", conn);
-            // DEBUG
-            return;
+            //Search only the user's own items.
+            comm = new SqlCommand("SelectOnlyMyOwnItems", conn);
         }
         else
         {
