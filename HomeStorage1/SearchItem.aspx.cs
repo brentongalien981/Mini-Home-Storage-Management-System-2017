@@ -42,7 +42,7 @@ public partial class SearchItem : System.Web.UI.Page
         catch
         {
             dbErrorLabel.Text =
-            "Error loading the list of category!<br />";
+            "Error loading the list of Item Type..<br />";
         }
         finally
         {
@@ -89,11 +89,8 @@ public partial class SearchItem : System.Web.UI.Page
         comm.Parameters.Add("@ItemName", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@ItemName"].Value = string.Format("%{0}%", itemNameTextBox.Text);
 
-        comm.Parameters.Add("@TypeId", System.Data.SqlDbType.NVarChar);
-        comm.Parameters["@TypeId"].Value = string.Format("%{0}%", itemTypeNameList.SelectedItem.Text); ;
-
-        comm.Parameters.Add("@Tags", System.Data.SqlDbType.NVarChar);
-        comm.Parameters["@Tags"].Value = string.Format("%{0}%", tagsTextbox.Text);
+        comm.Parameters.Add("@ItemTypeName", System.Data.SqlDbType.NVarChar);
+        comm.Parameters["@ItemTypeName"].Value = string.Format("%{0}%", itemTypeNameList.SelectedItem.Text); ;
 
         comm.Parameters.Add("@Tags", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Tags"].Value = string.Format("%{0}%", tagsTextbox.Text);
@@ -101,11 +98,14 @@ public partial class SearchItem : System.Web.UI.Page
         comm.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Description"].Value = string.Format("%{0}%", descriptionTextbox.Text);
 
+        comm.Parameters.Add("@ContainedBy", System.Data.SqlDbType.NVarChar);
+        comm.Parameters["@ContainedBy"].Value = string.Format("%{0}%", containedByTextbox.Text);
+
         comm.Parameters.Add("@Private", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Private"].Value = string.Format("%{0}%", privacyList.SelectedItem.Value);
 
-        //comm.Parameters.Add("@UserId", System.Data.SqlDbType.UniqueIdentifier);
-        //comm.Parameters["@UserId"].Value = usr.ProviderUserKey;
+        comm.Parameters.Add("@UserId", System.Data.SqlDbType.UniqueIdentifier);
+        comm.Parameters["@UserId"].Value = usr.ProviderUserKey;
 
         try
         {
@@ -116,10 +116,11 @@ public partial class SearchItem : System.Web.UI.Page
             reader.Close();
             searchResultsLabel.Text = "Search Results:";
         }
-        catch
+        catch (Exception ex)
         {
             dbErrorLabel.Text =
-            "Error loading the details!<br />";
+            "Error loading the details..<br />" +
+            ex.ToString() + "<br>";
         }
         finally
         {

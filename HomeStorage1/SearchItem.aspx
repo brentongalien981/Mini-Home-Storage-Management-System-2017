@@ -37,10 +37,10 @@
         <asp:textbox id="containedByTextbox" runat="server" />
         <br />
 
-        <span class="widelabel">Private:</span>
+        <span class="widelabel">Item Privacy:</span>
         <asp:dropdownlist id="privacyList" runat="server">
-            <asp:ListItem Text="Private" Value="1" />
-            <asp:ListItem Text="Public" Value="0" />
+            <asp:ListItem Text="Only My Items" Value="1" />
+            <asp:ListItem Text="Public Items" Value="0" />
         </asp:dropdownlist>
         <br />
     </p>
