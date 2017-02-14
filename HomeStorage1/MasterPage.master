@@ -50,7 +50,7 @@
                                         <asp:MenuItem Text="Search Item" NavigateUrl="SearchItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Add Item" NavigateUrl="AddItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Edit Item" NavigateUrl="EditItem.aspx"></asp:MenuItem>
-                                        <asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>
+                                        <%--<asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>--%>
                                     </Items>
                                 </asp:Menu>
                             </LoggedInTemplate>

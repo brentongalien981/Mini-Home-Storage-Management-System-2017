@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
- <asp:SqlDataSource ID="itemTypesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:LocalSqlServer %>" SelectCommand="SELECT [ItemTypeId], [ItemTypeName] FROM [ItemType]"></asp:SqlDataSource>
+ <asp:SqlDataSource ID="itemTypesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:LocalSqlServer %>" SelectCommand="SELECT [ItemTypeId], [ItemTypeName] FROM [ItemType] WHERE ItemTypeId > 1"></asp:SqlDataSource>
 
     <asp:SqlDataSource ID="itemTypeDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:LocalSqlServer %>"
         DeleteCommand="DELETE FROM [ItemType] WHERE [ItemTypeId] = @ItemTypeId"

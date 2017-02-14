@@ -54,8 +54,8 @@ public partial class AddItem : System.Web.UI.Page
                 string containedBy = containedByTextbox.Text;
                 if (containedBy == "")
                 {
-                    //comm.Parameters["@ContainedBy"].Value = DBNull.Value;
-                    comm.Parameters["@ContainedBy"].Value = -1;
+                    comm.Parameters["@ContainedBy"].Value = DBNull.Value;
+                    //comm.Parameters["@ContainedBy"].Value = -1;
                 }
                 else
                 {

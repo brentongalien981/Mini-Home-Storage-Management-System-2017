@@ -91,14 +91,26 @@ public partial class SearchItem : System.Web.UI.Page
         comm.Parameters.Add("@ItemTypeName", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@ItemTypeName"].Value = string.Format("%{0}%", itemTypeNameList.SelectedItem.Text); ;
 
+
         comm.Parameters.Add("@Tags", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Tags"].Value = string.Format("%{0}%", tagsTextbox.Text);
+
 
         comm.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Description"].Value = string.Format("%{0}%", descriptionTextbox.Text);
 
         comm.Parameters.Add("@ContainedBy", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@ContainedBy"].Value = string.Format("%{0}%", containedByTextbox.Text);
+        //string containedBy = containedByTextbox.Text;
+        //if (containedBy == "")
+        //{
+        //    comm.Parameters["@ContainedBy"].Value = DBNull.Value;
+        //    //comm.Parameters["@ContainedBy"].Value = -1;
+        //}
+        //else
+        //{
+        //    comm.Parameters["@ContainedBy"].Value = string.Format("%{0}%", containedByTextbox.Text);
+        //}
 
         comm.Parameters.Add("@Private", System.Data.SqlDbType.NVarChar);
         comm.Parameters["@Private"].Value = string.Format("%{0}%", privacyList.SelectedItem.Value);
