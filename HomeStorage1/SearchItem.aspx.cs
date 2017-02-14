@@ -60,6 +60,7 @@ public partial class SearchItem : System.Web.UI.Page
     {
         System.Web.Security.MembershipUser usr = System.Web.Security.Membership.GetUser();
 
+
         SqlConnection conn;
         SqlCommand comm;
         SqlDataReader reader;

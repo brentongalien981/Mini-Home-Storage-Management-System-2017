@@ -23,9 +23,9 @@ public partial class AddItem : System.Web.UI.Page
         System.Web.Security.MembershipUser usr = System.Web.Security.Membership.GetUser();
         if (usr != null)
         {
-            string script = "alert(\"usr.ProviderUserKey: " + usr.ProviderUserKey + "\");";
-            ScriptManager.RegisterStartupScript(this, GetType(),
-                                  "ServerControlScript", script, true);
+            //string script = "alert(\"usr.ProviderUserKey: " + usr.ProviderUserKey + "\");";
+            //ScriptManager.RegisterStartupScript(this, GetType(),
+            //                      "ServerControlScript", script, true);
 
             if (Page.IsValid)
             {

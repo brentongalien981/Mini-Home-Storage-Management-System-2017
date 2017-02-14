@@ -45,7 +45,7 @@
         <br />
     </p>
     <p>
-        <asp:button id="searchButton" text="Search Recipe"
+        <asp:button id="searchButton" text="Search Item"
             width="200" runat="server" onclick="searchButton_Click" />
     </p>
 

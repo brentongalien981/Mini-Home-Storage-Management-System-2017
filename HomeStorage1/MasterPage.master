@@ -49,6 +49,7 @@
                                         <asp:MenuItem Text="Home" NavigateUrl="Default.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Search Item" NavigateUrl="SearchItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Add Item" NavigateUrl="AddItem.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Edit Item" NavigateUrl="EditItem.aspx"></asp:MenuItem>
                                         <asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>
                                     </Items>
                                 </asp:Menu>
@@ -56,7 +57,7 @@
 
 
                             <RoleGroups>
-                                <asp:RoleGroup Roles="Administrator,Owner">
+                                <asp:RoleGroup Roles="Administrator,Admin">
                                     <ContentTemplate>
                                         <asp:LoginName ID="LoginName1" runat="server" FormatString="Welcome, {0}!" />
                                         <br />
@@ -70,7 +71,8 @@
                                                 <asp:MenuItem Text="Search Item" NavigateUrl="SearchItem.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Add Item" NavigateUrl="AddItem.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Add Item Type" NavigateUrl="AddItemType.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="View All Users" NavigateUrl="AllUsersView.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Edit Item" NavigateUrl="EditItem.aspx"></asp:MenuItem>
+                                                <%--<asp:MenuItem Text="View All Users" NavigateUrl="AllUsersView.aspx"></asp:MenuItem>--%>
                                                 <%--<asp:MenuItem Text="Add User" NavigateUrl="AddUser.aspx"></asp:MenuItem>--%>
                                                 <asp:MenuItem Text="User Management" NavigateUrl="UserManagement.aspx"></asp:MenuItem>
 

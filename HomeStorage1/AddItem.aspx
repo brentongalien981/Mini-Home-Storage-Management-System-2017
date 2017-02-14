@@ -49,7 +49,7 @@
     </p>
 
     <p>
-        <asp:button id="addButton" text="Add Recipe"
+        <asp:button id="addButton" text="Add Item"
             width="200" runat="server" onclick="addButton_Click" />
     </p>
 
