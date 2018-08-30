@@ -122,6 +122,12 @@ public partial class AddItem : System.Web.UI.Page
 
                     conn.Close();
                 }
+
+                // After successfully adding the item, refresh the textboxes.
+                itemNameTextBox.Text = "";
+                tagsTextBox.Text = "";
+                descriptionTextBox.Text = "";
+                containedByTextbox.Text = "";
             }
         }
         else

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Search Recipe" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchItem.aspx.cs" Inherits="SearchItem" %>
+﻿<%@ Page Title="Search Item" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchItem.aspx.cs" Inherits="SearchItem" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <style>
